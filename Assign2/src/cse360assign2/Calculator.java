@@ -7,7 +7,7 @@
  *              The value in total one can find it with the getTotal method. Also, the history of 
  *              the method use on total one can find it using the getHistory method. 
  */
-package cse360assign3;
+package cse360assign2;
 
 public class Calculator {
 	private int total;
@@ -26,7 +26,7 @@ public class Calculator {
 	 * @return  the value in total
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/**
@@ -35,7 +35,7 @@ public class Calculator {
 	 * @param value   the integer value given
 	 */
 	public void add (int value) {
-		
+		total = total + value;
 	}
 	
 	/**
@@ -44,7 +44,7 @@ public class Calculator {
 	 * @param value  the integer value given
 	 */
 	public void subtract (int value) {
-		
+		total = total - value; 
 	}
 	
 	/**
@@ -53,7 +53,7 @@ public class Calculator {
 	 * @param value the integer value given
 	 */
 	public void multiply (int value) {
-		
+		total = total * value;
 	}
 	
 	/**
@@ -63,7 +63,12 @@ public class Calculator {
 	 * @param value  the integer value given
 	 */
 	public void divide (int value) {
-		
+		if(value==0) {
+			total = 0;
+		}
+		else {
+			total = total / value;
+		}
 	}
 	
 	/**
