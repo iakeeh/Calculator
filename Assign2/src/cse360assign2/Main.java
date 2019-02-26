@@ -4,7 +4,7 @@
  * Assignment #: 2
  * Description: This class test the calculator class.
  */
-package cse360assign2;
+package cse360assign3;
 
 public class Main {
 
